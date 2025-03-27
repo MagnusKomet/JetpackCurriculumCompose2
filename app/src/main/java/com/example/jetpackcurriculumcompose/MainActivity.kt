@@ -47,8 +47,7 @@ class MainActivity : ComponentActivity() {
 fun ViewContainer() {
     Scaffold(
         topBar = { Toolbar()},
-        content = {padding -> // Captura el padding
-            Content(modifier = Modifier.padding(padding))},
+        content = {padding -> Content(modifier = Modifier.padding(padding))},
         floatingActionButton = {FAB()},
         floatingActionButtonPosition = FabPosition.End
     )
